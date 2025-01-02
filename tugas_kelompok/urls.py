@@ -20,6 +20,7 @@ import dashboard.views as dashboard
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', dashboard.index),
-    path('about/', dashboard.about),
+    path('', dashboard.index,name="dashboard.index"),
+    path('about/', dashboard.about,name="dashboard.about"),
+    path('about-bella/', dashboard.about_bella,name="dashboard.about_bella"),
 ]
